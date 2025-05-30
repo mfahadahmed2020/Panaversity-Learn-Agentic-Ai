@@ -1,0 +1,15 @@
+[project]
+name = "panaversity-learn-agentic-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.16",
+    "python-dotenv>=1.1.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "01 Ai Agents First 01 UV Project 01 & 02/myproject",
+]
