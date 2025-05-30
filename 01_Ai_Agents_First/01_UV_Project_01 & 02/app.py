@@ -40,3 +40,18 @@ response = Runner.run_sync(
 )
 
 print(response)
+
+----- Out Put -----
+ ----- Code ------
+
+RunResult:
+- Last agent: Agent(name="Chief - X2 Translator", ...)
+- Final output (str):
+    My name is M Fahad Ahmed. I am a student of GIAIC.
+
+    **Urdu:** میرا نام ایم فہد احمد ہے۔ میں جی آئی اے آئی سی کا طالب علم ہوں۔
+- 1 new item(s)
+- 1 raw response(s)
+- 0 input guardrail result(s)
+- 0 output guardrail result(s)
+(See `RunResult` for more details)
