@@ -1,0 +1,11 @@
+01. Tutorial_MA_
+
+Translator Agentic-AI Build A Translator Agent Using Agentic AI
+
+https://youtu.be/6gcO4AC11V0
+
+pip install python-dotenv
+pip install chainlit
+pip install litellm
+pip install python-dotenv chainlit litellm
+chainlit run trans.py
