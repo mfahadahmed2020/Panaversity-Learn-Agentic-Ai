@@ -1,0 +1,88 @@
+01. Tutorial_SBS_K & L
+
+https://youtu.be/bl4vlJFw3_Y
+
+uv init chatbot
+uv add chainlit
+chainlit hello
+
+Chainlit: Chat Life Cycle
+tinztwinshub.com
+When a User Connect to Your Chainlit app a new Chat Session Statrts.
+A Chat Session Goes Through Several Events.
+You Can Respond to These Events by Defining Hooks.
+A Decorator is Used to Define a Hooks.
+
+Decorators
+@on_chat_start____New Chart Session
+@on_message____New message from the User
+@on_stop_____user clicks the stop button
+@on_chat_resume____user continues a chat Session
+@on_chat_end_____user disconnected or staarted new Session
+
+uv run main.py
+
+import chainlit as cl
+
+@cl.on_message
+async def main(message: cl.message):
+
+    response = f"You Said:{message.content}"
+
+    await cl.Message(content=response).send()
+
+    command run:
+    chainlit run m.py
+    chainlit hello
+
+02. Tutorial_SBS_K & L
+
+https://youtu.be/SdUcIsD8dE8
+
+Packages Install
+uv add google generativeai 
+python-dotenv
+pip install google-generativeai
+
+import os
+import chainlit as cl
+import google.generativeai as genai
+from dotenv import load_dotenv
+
+load_dotenv()
+
+gemini_api_key =os.getenv("GEMINI_API_KEY")
+
+genai.configure(api_key=gemini_api_key)
+
+model = genai.GenerativeModel(
+    model_name="gemini-2.0-flash"
+)
+
+@cl.on_chat_start
+async def handle_chat_start():
+    await cl.Message(content="Assalam O Alaikum! Aab Ka Kya Sawal Hai?").send()
+
+@cl.on_message
+async def handle_message(message:cl.Message):
+    prompt =Message.content
+    response= model.generate_content(prompt)
+
+    response_text =response.text if hasattr(response,"text") else ""
+
+    await cl.Message(content=response_text).send()
+
+Terminal Run command
+chainlit run App.py
+
+01. Tutorial_MA_
+
+Translator Agentic-AI Build A Translator Agent Using Agentic AI
+
+https://youtu.be/6gcO4AC11V0
+
+pip install python-dotenv
+pip install chainlit
+pip install litellm
+pip install python-dotenv chainlit litellm
+chainlit run trans.py
