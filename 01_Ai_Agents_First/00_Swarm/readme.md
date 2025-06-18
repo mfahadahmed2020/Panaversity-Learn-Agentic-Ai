@@ -24,23 +24,44 @@ OpenAI's Agents SDK is a versatile framework designed to facilitate the developm
 
 https://www.anthropic.com/engineering/building-effective-agents
 
+Onine Cuctomer Support System
+Company Customer Support Sydtem By AI Agent Step By Step Work
+* Agent A => General Inquiries
+* Agent B => Billing Problems
+* Agent C => Technical / Internet Problems
+* Agent D => Sales & New Packages
+* Agent O => Orchestrator (Manager) (Work Divide By Agents)
+* Agent E => Evaluator (FeedBack Checker)
+
 **1. Prompt Chaining (Chain Workflow):**
 
-This pattern involves breaking down complex tasks into a sequence of simpler, manageable steps, where each step builds upon the previous one. The Agents SDK supports this by allowing developers to define agents that execute specific functions in a predetermined order, ensuring a structured approach to task completion. 
+* Agent A => General Inquiries
+* Work Step By Step 
+
+This pattern involves breaking down complex tasks into a sequence of simpler, manageable steps, where each step builds upon the previous one. The Agents SDK supports this by allowing developers to define agents that execute specific functions in a predetermined order, ensuring a structured approach to task completion.
 
 **2. Routing:**
+
+* Agent B => Billing Problems
 
 Routing entails directing tasks to the most appropriate agent based on the task's nature. The Agents SDK facilitates this through its handoff mechanism, enabling agents to transfer control to other agents better suited to handle specific subtasks, thereby optimizing task management. 
 
 **3. Parallelization:**
 
+* Agent C => Technical / Internet Problems
+* Agent D => Sales & New Packages
+
 This pattern focuses on executing multiple subtasks concurrently to enhance efficiency. With the Agents SDK, developers can design agents that operate in parallel, leveraging the SDK's orchestration capabilities to manage simultaneous processes effectively. 
 
 **4. Orchestrator-Workers:**
 
+* Agent O => Orchestrator (Manager) (Work Divide By Agents)
+
 In this design, an orchestrator agent decomposes a complex task into smaller subtasks and assigns them to worker agents. The Agents SDK's architecture supports this by allowing an orchestrator agent to oversee the workflow and delegate tasks to specialized worker agents, ensuring coordinated task execution. 
 
 **5. Evaluator-Optimizer:**
+
+* Agent E => Evaluator (FeedBack Checker)
 
 This pattern involves iterative improvement through feedback loops, where an evaluator agent assesses the performance of other agents and suggests optimizations. The Agents SDK's guardrails feature enables the implementation of such evaluative mechanisms, allowing for continuous performance enhancement and adherence to desired behaviors. 
 
