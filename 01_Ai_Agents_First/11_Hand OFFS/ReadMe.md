@@ -57,3 +57,5 @@ In this scenario, the triage_agent uses a customized handoff to the refund_agent
 Implementing handoffs in the OpenAI Agents SDK enhances the modularity and specialization of your AI agents, enabling them to delegate tasks efficiently. By following this tutorial, you can create a multi-agent system where each agent operates within its domain expertise, leading to more efficient and effective task management.
 
 For more detailed information, refer to the OpenAI Agents SDK Handoffs Documentation.
+
+https://openai.github.io/openai-agents-python/handoffs/
