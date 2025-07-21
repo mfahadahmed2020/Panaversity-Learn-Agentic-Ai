@@ -1,1 +1,32 @@
+OpenAI offers a few built-in tools when using the OpenAIResponsesModel
+
+ ریسپانس ماڈل استعمال کرتے وقت چند بلٹ ان ٹولز پیش کرتا ہے۔ OpenAI
+
+The WebSearchTool lets an agent search the web.
+
+ایک ایجنٹ کو ویب پر تلاش کرنے دیتا ہے۔
+
+The FileSearchTool allows retrieving information from your OpenAI Vector Stores.
+
+فائل سرچ ٹول آپ کے اوپن اے آئی ویکٹر اسٹورز سے معلومات کی بازیافت کی اجازت دیتا ہے ۔
+
+The ComputerTool allows automating computer use tasks.
+
+ کمپیوٹر کے استعمال کے کاموں کو خودکار کرنے کی اجازت دیتا ہے ۔
+
+The CodeInterpreterTool lets the LLM execute code in a sandboxed environment.
+
+کوڈ انٹرپریٹر ٹول ایل ایل ایم کو سینڈ باکس والے ماحول میں کوڈ پر عمل درآمد کرنے کی اجازت دیتا ہے۔
+
+The HostedMCPTool exposes a remote MCP server's tools to the model.
+
+ہوسٹڈ ایم سی پی ٹول ریموٹ ایم سی پی سرور کے ٹولز کو ماڈل کے سامنے لاتا ہے۔
+
+The ImageGenerationTool generates images from a prompt.
+
+امیج جنریشن ٹول پرامپٹ سے تصاویر تیار کرتا ہے۔
+
+The LocalShellTool runs shell commands on your machine.
+
+لوکل شیل ٹول آپ کی مشین پر شیل کمانڈ چلاتا ہے ۔
 
