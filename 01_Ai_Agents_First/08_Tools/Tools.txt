@@ -1,3 +1,22 @@
+Tools / اوزار
+
+Tools let agents take actions: things like fetching data, running code, calling external APIs, and even using a computer. There are three classes of tools in the Agent SDK:
+
+ایجنٹ ایس ڈی کے میں ٹولز کی تین کلاسیں ہیں:
+چیزیں جیسے ڈیٹا بازیافت کرنا، کوڈ چلانا، بیرونی اے پی آئی کو کال کرنا، اور یہاں تک کہ کمپیوٹر کا استعمال کرنا
+ٹولز ایجنٹوں کو کارروائی کرنے دیتے ہیں ۔
+
+Hosted tools: these run on LLM servers alongside the AI models. OpenAI offers retrieval, web search and computer use as hosted tools.
+یہ AI ماڈلز کے ساتھ LLM سرورز پر چلتے ہیں۔ OpenAI بازیافت، ویب تلاش اور کمپیوٹر کے استعمال کو میزبانی والے ٹولز کے طور پر پیش کرتا ہے۔
+
+Function calling: these allow you to use any Python function as a tool.
+یہ آپ کو کسی بھی Python فنکشن کو بطور ٹول استعمال کرنے کی اجازت دیتے ہیں۔
+
+Agents as tools: this allows you to use an agent as a tool, allowing Agents to call other agents without handing off to them.
+یہ آپ کو ایجنٹ کو بطور آلہ استعمال کرنے کی اجازت دیتا ہے، جس سے ایجنٹوں کو دوسرے ایجنٹوں کو ان کے حوالے کیے بغیر کال کرنے کی اجازت ملتی ہے۔
+
+Hosted tools / میزبانی کے اوزار
+
 OpenAI offers a few built-in tools when using the OpenAIResponsesModel
 
  ریسپانس ماڈل استعمال کرتے وقت چند بلٹ ان ٹولز پیش کرتا ہے۔ OpenAI
@@ -30,3 +49,22 @@ The LocalShellTool runs shell commands on your machine.
 
 لوکل شیل ٹول آپ کی مشین پر شیل کمانڈ چلاتا ہے ۔
 
+Function tools
+
+You can use any Python function as a tool. The Agents SDK will setup the tool automatically:
+
+    The name of the tool will be the name of the Python function (or you can provide a name)
+    Tool description will be taken from the docstring of the function (or you can provide a description)
+    The schema for the function inputs is automatically created from the function's arguments
+    Descriptions for each input are taken from the docstring of the function, unless disabled
+
+We use Python's inspect module to extract the function signature, along with griffe to parse docstrings and pydantic for schema creation.
+
+Custom function tools
+
+Sometimes, you don't want to use a Python function as a tool. You can directly create a FunctionTool if you prefer. You'll need to provide:
+
+    name
+    description
+    params_json_schema, which is the JSON schema for the arguments
+    on_invoke_tool, which is an async function that receives a ToolContext and the arguments as a JSON string, and must return the tool output as a string.
