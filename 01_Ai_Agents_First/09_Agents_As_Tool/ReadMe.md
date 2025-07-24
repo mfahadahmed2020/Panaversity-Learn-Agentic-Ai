@@ -1,20 +1,44 @@
 The OpenAI Agents SDK provides a robust framework for integrating various tools into agents, enabling them to perform tasks such as data retrieval, web searches, and code execution. Here's an overview of the key points regarding tool integration:
 
-Types of Tools:
+OpenAI ایجنٹس SDK ایجنٹوں میں مختلف ٹولز کو ضم کرنے کے لیے ایک مضبوط فریم ورک فراہم کرتا ہے، جس سے وہ ڈیٹا کی بازیافت، ویب سرچز، اور کوڈ پر عمل درآمد جیسے کاموں کو انجام دینے کے قابل بناتا ہے۔ یہاں ٹول انضمام کے حوالے سے اہم نکات کا ایک جائزہ ہے:
+
+
+Types of Tools : / : اوزار کی اقسام
 
     Hosted Tools: These are pre-built tools running on OpenAI's servers, accessible via the [OpenAIResponsesModel]. Examples include:
+
+    ہوسٹڈ ٹولز: یہ پہلے سے بنائے گئے ٹولز ہیں جو OpenAI کے سرورز پر چل رہے ہیں، جو [OpenAIresponsesModel] کے ذریعے قابل رسائی ہیں۔ مثالیں شامل ہیں۔
 
         WebSearchTool: Enables agents to perform web searches.
             Try it in Colab: File Search Tool Example
 
+    ویب سرچ ٹول:
+        ایجنٹوں کو ویب تلاش کرنے کے قابل بناتا ہے۔ 
+        اسے Colab میں آزمائیں: فائل سرچ ٹول کی مثال
+
+        
         FileSearchTool: Allows retrieval of information from OpenAI Vector Stores.
             Try it in Colab: Computer Tool Example
 
+    فائل سرچ ٹول: اوپن اے آئی ویکٹر اسٹورز سے معلومات کی بازیافت کی اجازت دیتا ہے۔ 
+    اسے Colab میں آزمائیں: کمپیوٹر ٹول کی مثال
+
         ComputerTool: Facilitates automation of computer-based tasks.
-            We will use model=computer-use-preview-2025-03-11
+
+    کمپیوٹر ٹول: کمپیوٹر پر مبنی کاموں کے آٹومیشن کی سہولت فراہم کرتا ہے۔
+        
+            We will use model=computer-use-preview
+            2025-03-11
+
+            ہم ماڈل = کمپیوٹر کے استعمال کا پیش نظارہ استعمال کریں گے ۔ 
+            
             Note: The model "computer-use-preview" is not available.
 
+            نوٹ: ماڈل "کمپیوٹر کے استعمال کا پیش نظارہ" دستیاب نہیں ہے۔
+
     Function Calling: This feature allows agents to utilize any Python function as a tool, enhancing their versatility.
+
+    
 
     Agents as Tools: Agents can employ other agents as tools, enabling hierarchical task management without transferring control.
 
