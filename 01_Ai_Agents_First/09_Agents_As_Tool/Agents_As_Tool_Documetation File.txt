@@ -1,1 +1,37 @@
+https://openai.github.io/openai-agents-python/tools/
 
+Automatic argument and docstring parsing
+
+As mentioned before, we automatically parse the function signature to extract the schema for the tool, and we parse the docstring to extract descriptions for the tool and for individual arguments. Some notes on that:
+
+    The signature parsing is done via the inspect module. We use type annotations to understand the types for the arguments, and dynamically build a Pydantic model to represent the overall schema. It supports most types, including Python primitives, Pydantic models, TypedDicts, and more.
+    We use griffe to parse docstrings. Supported docstring formats are google, sphinx and numpy. We attempt to automatically detect the docstring format, but this is best-effort and you can explicitly set it when calling function_tool. You can also disable docstring parsing by setting use_docstring_info to False.
+
+The code for the schema extraction lives in agents.function_schema.
+Agents as tools
+
+In some workflows, you may want a central agent to orchestrate a network of specialized agents, instead of handing off control. You can do this by modeling agents as tools.
+
+Customizing tool-agents
+
+The agent.as_tool function is a convenience method to make it easy to turn an agent into a tool. It doesn't support all configuration though; for example, you can't set max_turns. For advanced use cases, use Runner.run directly in your tool implementation:
+
+Custom output extraction
+
+In certain cases, you might want to modify the output of the tool-agents before returning it to the central agent. This may be useful if you want to:
+
+    Extract a specific piece of information (e.g., a JSON payload) from the sub-agent's chat history.
+    Convert or reformat the agent’s final answer (e.g., transform Markdown into plain text or CSV).
+    Validate the output or provide a fallback value when the agent’s response is missing or malformed.
+
+You can do this by supplying the custom_output_extractor argument to the as_tool method:
+
+Handling errors in function tools
+
+When you create a function tool via @function_tool, you can pass a failure_error_function. This is a function that provides an error response to the LLM in case the tool call crashes.
+
+    By default (i.e. if you don't pass anything), it runs a default_tool_error_function which tells the LLM an error occurred.
+    If you pass your own error function, it runs that instead, and sends the response to the LLM.
+    If you explicitly pass None, then any tool call errors will be re-raised for you to handle. This could be a ModelBehaviorError if the model produced invalid JSON, or a UserError if your code crashed, etc.
+
+If you are manually creating a FunctionTool object, then you must handle errors inside the on_invoke_tool function.
