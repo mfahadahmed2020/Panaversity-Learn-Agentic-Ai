@@ -1,6 +1,6 @@
 https://openai.github.io/openai-agents-python/context/
 
-Context management
+Context Management
 
 Context is an overloaded term. There are two main classes of context you might care about:
 
