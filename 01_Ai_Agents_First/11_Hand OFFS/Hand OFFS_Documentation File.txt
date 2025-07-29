@@ -45,6 +45,7 @@ Recommended prompts
 
 To make sure that LLMs understand handoffs properly, we recommend including information about handoffs in your agents. We have a suggested prefix in agents.extensions.handoff_prompt.RECOMMENDED_PROMPT_PREFIX, or you can call agents.extensions.handoff_prompt.prompt_with_handoff_instructions to automatically add recommended data to your prompts.
 
+https://platform.openai.com/docs/guides/structured-outputs?api-mode=responses
 
 Orchestrating multiple agents
 
