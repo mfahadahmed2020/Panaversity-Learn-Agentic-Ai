@@ -1,0 +1,38 @@
+Welcome to Chainlit! 🚀🤖
+
+Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+Useful Links 🔗
+
+    Documentation: Get started with our comprehensive Chainlit Documentation 📚
+    Discord Community: Join our friendly Chainlit Discord to ask questions, share your projects, and connect with other developers! 💬
+
+We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+Welcome screen
+To modify the welcome screen, edit the chainlit.md file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+
+
+We import chainlit (obviously).
+
+We listen for incoming messages with the @cl.on_message decorator, meaning whenever a user sends a message, the main function gets triggered.
+
+The main function will be called every time a user inputs a message in the chatbot UI. You can put your custom logic within the function to process the user’s input, such as analyzing the text, calling an API, or computing a result.
+
+Inside, we can write our custom logic to process the message. In this simple example, we’re sending a fake response back to the user that echoes what they sent, using. cl.Message.
+
+The content is formatted as “Received: {message.content}” and then sent back to the user asynchronously with .send().
+
+Let’s test it with the run command of chainlit:
+
+Installation
+Chainlit requires python>=3.9.
+You can install Chainlit it via pip as follows:
+
+Copy
+pip install chainlit
+This will make the chainlit command available on your system.
+Make sure everything runs smoothly:
+
+Copy
+chainlit hello
+This should spawn the chainlit UI and ask for your name like so:
+
