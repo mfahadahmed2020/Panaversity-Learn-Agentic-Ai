@@ -30,6 +30,7 @@ To enable an agent to delegate tasks to another agent, define handoffs during th
 Examples
 
 In this setup, the triage_agent can delegate tasks to either the billing_agent or the refund_agent based on the user's request.
+
 4. Running the Agent Orchestration
 
 Use the Runner to execute the agent workflow.
@@ -52,6 +53,7 @@ Examples
 
 
 In this scenario, the triage_agent uses a customized handoff to the refund_agent, allowing for specific configurations during the delegation process.
+
 6. Conclusion
 
 Implementing handoffs in the OpenAI Agents SDK enhances the modularity and specialization of your AI agents, enabling them to delegate tasks efficiently. By following this tutorial, you can create a multi-agent system where each agent operates within its domain expertise, leading to more efficient and effective task management.
