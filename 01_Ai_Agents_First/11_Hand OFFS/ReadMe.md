@@ -43,6 +43,19 @@ Note:
 
 Triage AI agents are artificial intelligence systems designed to assess, categorize, and prioritize tasks, ensuring that the most critical issues receive immediate attention. By automating the initial evaluation process, these agents enhance efficiency and accuracy across various sectors. How to pronounce:
 
+
+ ایجنٹ آرکیسٹریشن چلانا
+
+ ایجنٹ کے ورک فلو کو انجام دینے کے لیے رنر کا استعمال کریں۔
+
+ مثالیں
+
+ اس مثال میں، ٹرا ئیج _ ایجنٹ صارف کے ان پٹ کا اندازہ لگاتا ہے اور مناسب ماہر ایجنٹ کو کام سونپتا ہے۔
+
+ نوٹ:
+
+ ٹرائیج اے آئی ایجنٹس مصنوعی ذہانت کے نظام ہیں جو کاموں کی تشخیص، درجہ بندی اور ترجیح دینے کے لیے بنائے گئے ہیں، اس بات کو یقینی بناتے ہوئے کہ انتہائی نازک مسائل پر فوری     توجہ دی جائے۔ ابتدائی تشخیص کے عمل کو خودکار بنا کر، یہ ایجنٹ مختلف شعبوں میں کارکردگی اور درستگی کو بڑھاتے ہیں۔ کس طرح تلفظ کریں:
+
 https://www.google.com/search?q=pronounce+triage
 
 5. Advanced Handoff Customization
