@@ -102,3 +102,23 @@ Developers are giving the OpenAI Agents SDK high marks for its simplicity and po
     Beyond individual projects, enterprise-level reviews (for example, from companies like Box) suggest that when combined with other tools (like web and file search), the SDK makes it easier to integrate internal data with real-time external information. This holistic approach is being viewed as pivotal for building truly autonomous AI systems.
 
 Overall, developers and early adopters are very positive about the SDK, praising it for reducing manual prompt engineering, enabling more autonomous agents, and providing clear, actionable feedback through its tracing tools. The enthusiasm from the community and growing enterprise interest signal that this framework could become a cornerstone for future AI applications.
+
+
+ اوپن اے آئی ایجنٹس ایس ڈی کے : اے آئی ایجنٹوں کی تعمیر کے لیے ایک بنیادی تہہ فراہم کرتا ہے۔
+
+اوپن اے آئی ایجنٹس ایس ڈی کے ایک اوپن سورس، ہلکا پھلکا فریم ورک ہے جو ڈویلپرز کو "ایجنٹک" AI ایپلی کیشنز بنانے اور آرکسٹریٹ کرنے دیتا ہے—ایسے نظام جہاں متعدد AI "ایجنٹس" پیچیدہ، کثیر قدمی کاموں کو خود مختاری سے انجام دینے کے لیے مل کر کام کرتے ہیں۔
+
+OpenAI ایجنٹس SDK Panversity کلاسز ویڈیو پلے لسٹ
+
+دیکھیں: اوپن اے آئی کے بالکل نئے ایجنٹس SDK - کریش کورس
+
+اوپن اے آئی ایجنٹس SDK Docs
+
+اوپن اے آئی ایجنٹس SDK کا جائزہ
+
+اوپن اے آئی کا اسٹریٹجک گیمبٹ: ایجنٹس SDK اور یہ انٹرپرائز AI کے لیے سب کچھ کیوں بدلتا ہے۔
+
+
+اوپن اے آئی ایجنٹس SDK کو بہت اچھی طرح سے ڈیزائن کیا گیا ہے، میرے پاس کچھ سوالات ہیں تاکہ آپ کوڈ کے بارے میں سوچنا شروع کر دیں: 
+
+ایجنٹ کلاس کو ڈیٹا کلاس کے طور پر بیان کیا گیا ہے کیوں؟
