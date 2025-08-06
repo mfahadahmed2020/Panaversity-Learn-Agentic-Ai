@@ -2,6 +2,7 @@ from agents import Agent, Runner,ItemHelpers, function_tool
 from dotenv import load_dotenv
 import asyncio
 from openai.types.responses import ResponseTextDeltaEvent
+from connection import config
 
 load_dotenv()
 
@@ -43,4 +44,5 @@ print("result>>>",result.final_output)
 
 
 # # await main()
+
 # asyncio.run(main())
