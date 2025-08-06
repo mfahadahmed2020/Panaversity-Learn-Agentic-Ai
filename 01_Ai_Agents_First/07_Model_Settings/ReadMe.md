@@ -132,3 +132,151 @@ hello_agent/ فولڈر میں مثالیں آزمائیں۔
  اپنی ترتیبات کے ساتھ تجربہ کریں۔
 
  یاد رکھیں: ماڈل کی ترتیبات کھانا پکانے میں پکانے کی طرح ہیں - تھوڑا بہت آگے جاتا ہے، اور صحیح امتزاج تمام فرق کرتا ہے! 🎛️✨
+
+
+
+ 🎛️ Model Settings Learning Module
+🚀 Quick Start
+
+Navigate to the module:
+
+cd 01_ai_agents_first/07_model_settings/hello_agent
+
+Install dependencies:
+
+uv add openai-agents
+
+Run the learning examples:
+
+python main.py
+
+📚 What You'll Learn
+
+This module teaches you how to fine-tune your AI agents using Model Settings:
+
+    Temperature: Control creativity vs. precision
+    Tool Choice: Decide when agents can use tools
+    Max Tokens: Control response length
+    Combining Settings: Create specialized agents
+
+🎯 Learning Progression
+
+    Start Simple: Temperature settings (creativity control)
+    Add Tools: Tool choice settings (when to use tools)
+    Control Length: Max tokens (response size)
+    Master It: Combine multiple settings
+
+🧪 Examples Included
+
+    Temperature Experiment: Compare cold vs. hot agents
+    Tool Choice Demo: Auto vs. required vs. none
+    Length Control: Brief vs. detailed responses
+    Combined Settings: Specialized math tutor
+    Interactive Experiment: Try your own settings
+
+💡 Key Concepts
+Temperature (The Creativity Knob)
+
+    Low (0.1-0.3): Precise, consistent answers
+    Medium (0.4-0.6): Balanced responses
+    High (0.7-0.9): Creative, varied responses
+
+Tool Choice (The Tool Switch)
+
+    Auto: Agent decides when to use tools
+    Required: Agent must use tools when available
+    None: Agent cannot use tools (chat only)
+
+Max Tokens (The Length Limit)
+
+    Low (50-100): Brief, concise responses
+    Medium (200-500): Detailed explanations
+    High (1000+): Comprehensive answers
+
+🔗 Related Modules
+
+    Previous: Basic Tools - Learn about tools
+    Next: Advanced Tools - Master tool usage
+
+🎓 Tips for Success
+
+    Start with defaults: Don't change settings unless needed
+    Test one setting at a time: See the impact of each change
+    Document your experiments: Keep notes on what works
+    Consider your use case: Different tasks need different settings
+
+Ready to fine-tune your AI agents? Let's start with the examples! 🎛️✨
+
+
+ 🎛️ ماڈل سیٹنگز لرننگ ماڈیول
+
+ 🚀 فوری آغاز
+
+ ماڈیول پر جائیں:
+
+cd 01_ai_agents_first/07_model_settings/hello_agent
+
+ انحصار انسٹال کریں:
+
+ یو وی اوپن اے آئی ایجنٹوں کو شامل کریں۔
+
+ سیکھنے کی مثالیں چلائیں:
+
+python main.py
+
+ 📚 آپ کیا سیکھیں گے۔
+
+ یہ ماڈیول آپ کو سکھاتا ہے کہ ماڈل سیٹنگز کا استعمال کرتے ہوئے اپنے AI ایجنٹوں کو کیسے ٹھیک کیا جائے: 
+
+ درجہ حرارت: کنٹرول تخلیقیت بمقابلہ درستگی 
+ ٹول چوائس: فیصلہ کریں کہ ایجنٹ کب ٹولز استعمال کر سکتے ہیں۔ 
+ زیادہ سے زیادہ ٹوکن: ردعمل کی لمبائی کو کنٹرول کریں۔ 
+ ترتیبات کو یکجا کرنا: خصوصی ایجنٹ بنائیں
+ 
+� � سیکھنے کی ترقی 
+
+ سادہ شروع کریں: درجہ حرارت کی ترتیبات (تخلیقی کنٹرول) 
+ ٹولز شامل کریں: ٹول چوائس سیٹنگز (ٹولز کب استعمال کریں) 
+ کنٹرول کی لمبائی: زیادہ سے زیادہ ٹوکن (جواب کا سائز) 
+ اس میں مہارت حاصل کریں: متعدد ترتیبات کو یکجا کریں۔
+
+ 🧪 مثالیں شامل ہیں۔ 
+
+ درجہ حرارت کا تجربہ: سرد بمقابلہ گرم ایجنٹوں کا موازنہ کریں۔ 
+ ٹول چوائس ڈیمو: آٹو بمقابلہ مطلوبہ بمقابلہ کوئی نہیں۔ 
+ لمبائی کنٹرول: مختصر بمقابلہ تفصیلی جوابات 
+ مشترکہ ترتیبات: خصوصی ریاضی کا ٹیوٹر 
+ انٹرایکٹو تجربہ: اپنی ترتیبات کو آزمائیں۔
+
+ 💡 کلیدی تصورات
+ درجہ حرارت (تخلیقی نوب) 
+
+ کم (0.1-0.3): درست، مسلسل جوابات 
+ درمیانہ (0.4-0.6): متوازن جوابات 
+ اعلی (0.7-0.9): تخلیقی، متنوع ردعمل
+
+ ٹول چوائس (دی ٹول سوئچ) 
+
+ آٹو: ایجنٹ فیصلہ کرتا ہے کہ ٹولز کا استعمال کب کرنا ہے۔ 
+ درکار: ایجنٹ دستیاب ہونے پر ٹولز کا استعمال کرے۔ 
+ کوئی نہیں: ایجنٹ ٹولز استعمال نہیں کر سکتا (صرف چیٹ)
+
+ زیادہ سے زیادہ ٹوکنز (لمبائی کی حد) 
+
+ کم (50-100): مختصر، جامع جوابات 
+ میڈیم (200-500): تفصیلی وضاحت 
+ اعلی (1000+): جامع جوابات
+
+ 🔗 متعلقہ ماڈیولز 
+
+ پچھلا: بنیادی ٹولز - ٹولز کے بارے میں جانیں۔ 
+ اگلا: ایڈوانسڈ ٹولز - ماسٹر ٹول کا استعمال
+
+ 🎓 کامیابی کے لیے نکات 
+
+ ڈیفالٹس کے ساتھ شروع کریں: جب تک ضرورت نہ ہو ترتیبات کو تبدیل نہ کریں۔ 
+ ایک وقت میں ایک ترتیب کی جانچ کریں: ہر تبدیلی کا اثر دیکھیں 
+ اپنے تجربات کو دستاویزی بنائیں: کیا کام کرتا ہے اس پر نوٹ رکھیں 
+ اپنے استعمال کے معاملے پر غور کریں: مختلف کاموں کو مختلف ترتیبات کی ضرورت ہوتی ہے۔
+
+ اپنے AI ایجنٹوں کو ٹھیک کرنے کے لیے تیار ہیں؟ آئیے مثالوں کے ساتھ شروع کریں! 🎛️✨
