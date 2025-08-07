@@ -77,3 +77,148 @@ Okay, I can help you with these questions. However, please understand that some 
         These novels are popular for their thrilling plots and are well-regarded within the Imran Series.
 
 I hope this is helpful!
+
+Terminal OutPut Weather_Agent.py
+
+tools>>> FunctionTool(name='fetch_weather', description='fetch weather accroding to city\n\nArgs:\ncity: str', params_json_schema={'properties': {'city': {'title': 'City', 'type': 'string'}}, 'required': ['city'], 'title': 'fetch_weather_args', 'type': 'object', 'additionalProperties': False}, on_invoke_tool=<function function_tool.<locals>._create_function_tool.<locals>._on_invoke_tool at 0x000001A1FC21CB80>, strict_json_schema=True, is_enabled=True)
+Tracing is disabled. Not creating trace Agent workflow
+Setting current trace: no-op
+Parent None or <agents.tracing.traces.NoOpTrace object at 0x000001A1FC10EFD0> is no-op, returning NoOpSpan
+Running agent Weather Assistant (turn 1)
+Tracing is disabled. Not creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001A1FC1F5EB0>
+[
+  {
+    "content": "You are helpfull weather assisatnt provide answer by calling fetch weathe tool",
+    "role": "system"
+  },
+  {
+    "role": "user",
+    "content": "what is the weather in karachi?"
+  }
+]
+Tools:
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "fetch_weather",
+      "description": "fetch weather accroding to city\n\nArgs:\ncity: str",
+      "parameters": {
+        "properties": {
+          "city": {
+            "title": "City",
+            "type": "string"
+          }
+        },
+        "required": [
+          "city"
+        ],
+        "title": "fetch_weather_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+
+LLM resp:
+{
+  "content": null,
+  "refusal": null,
+  "role": "assistant",
+  "annotations": null,
+  "audio": null,
+  "function_call": null,
+  "tool_calls": [
+    {
+      "id": "",
+      "function": {
+        "arguments": "{\"city\":\"karachi\"}",
+        "name": "fetch_weather"
+      },
+      "type": "function"
+    }
+  ]
+}
+
+Parent <agents.tracing.spans.NoOpSpan object at 0x000001A1FC200550> or <agents.tracing.traces.NoOpTrace object at 0x000001A1FC10EFD0> is no-op, returning NoOpSpan
+Invoking tool fetch_weather with input {"city":"karachi"}
+Tool call args: ['karachi'], kwargs: {}
+Tool fetch_weather returned the weather in karachi is sunny
+Running agent Weather Assistant (turn 2)
+Tracing is disabled. Not creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001A1FC628E30>
+[
+  {
+    "content": "You are helpfull weather assisatnt provide answer by calling fetch weathe tool",
+    "role": "system"
+  },
+  {
+    "role": "user",
+    "content": "what is the weather in karachi?"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "",
+        "type": "function",
+        "function": {
+          "name": "fetch_weather",
+          "arguments": "{\"city\":\"karachi\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "",
+    "content": "the weather in karachi is sunny"
+  }
+]
+Tools:
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "fetch_weather",
+      "description": "fetch weather accroding to city\n\nArgs:\ncity: str",
+      "parameters": {
+        "properties": {
+          "city": {
+            "title": "City",
+            "type": "string"
+          }
+        },
+        "required": [
+          "city"
+        ],
+        "title": "fetch_weather_args",
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  }
+]
+Stream: False
+Tool choice: NOT_GIVEN
+Response format: NOT_GIVEN
+
+LLM resp:
+{
+  "content": "The weather in karachi is sunny.\n",
+  "refusal": null,
+  "role": "assistant",
+  "annotations": null,
+  "audio": null,
+  "function_call": null,
+  "tool_calls": null
+}
+
+Resetting current trace
+result>>> The weather in karachi is sunny.
+
+Shutting down trace provider
+Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor object at 0x000001A1FB501940>  
