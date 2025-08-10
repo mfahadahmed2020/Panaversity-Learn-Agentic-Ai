@@ -8,6 +8,7 @@ LifeCycle
 In general terms, a lifecycle refers to the complete sequence of stages that an object, process, or entity goes through from its creation to its termination.
 
 In the context of the OpenAI Agents SDK, it specifically describes the stages an agent experiences—from when it’s initialized (or activated) until it completes its task and produces an output.
+
 Lifecycle events (hooks)
 
 Sometimes, you want to observe the lifecycle of an agent. For example, you may want to log events, or pre-fetch data when certain events occur. You can hook into the agent lifecycle with the hooks property. Subclass the AgentHooks class, and override the methods you're interested in.
