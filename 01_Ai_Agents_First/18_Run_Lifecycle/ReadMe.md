@@ -16,12 +16,14 @@ Sometimes, you want to observe the lifecycle of an agent. For example, you may w
 In the OpenAI Agents SDK, lifecycle management is provided at two levels:
 
     Run-Level Lifecycle (RunHooks):
+    
     This manages global events that span the entire execution or "run" of one or more agents. It allows you to monitor and control overarching events such as the start and end of an agent's execution, tool invocations, and handoffs between agents.
 
     Agent-Level Lifecycle (AgentHooks):
     This focuses on the individual agent. It lets you inject custom logic right into the agent's specific workflow—tracking events such as when an agent starts processing, when it completes its task, and when it interacts with external tools.
 
 These two layers allow for both a broad view of the system's execution (through RunHooks) and a detailed, fine-grained control of each agent's behavior (via AgentHooks).
+
 Run LifeCycle in the OpenAI Agents SDK
 
 In the SDK, the run lifecycle is managed through RunHooks. These hooks allow you to observe and control events that occur across the entire run of one or more agents. They include callbacks for when an agent starts or ends, when a tool is about to run, and when control is handed off between agents. You can add callbacks on these (lifecycle events)[https://openai.github.io/openai-agents-python/ref/lifecycle/#agents.lifecycle.RunHooks] in an agent run:
