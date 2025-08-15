@@ -1,11 +1,17 @@
 01.Structured_OutPut.py
+
 Terminal Out Put
 
 Creating trace Agent workflow with id trace_4fed5eab0ace4429845a6735399c138d
+
 Setting current trace: trace_4fed5eab0ace4429845a6735399c138d
+
 Creating span <agents.tracing.span_data.AgentSpanData object at 0x000001C9D78C4640> with id None      
+
 Running agent Structured_Weather_Agent (turn 1)
+
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001C9D79488F0> with id None 
+
 [
   {
     "content": "Use the final_output tool with WeatherAnswer schema.",
@@ -16,14 +22,21 @@ Creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001C9D
     "content": "Tell me karachi's temperature?."   
   }
 ]
+
 Tools:
+
 []
+
 Stream: False
+
 Tool choice: NOT_GIVEN
+
 Response format: {'type': 'json_schema', 'json_schema': {'name': 'final_output', 'strict': True, 'schema': {'properties': {'location': {'title': 'Location', 'type': 'string'}, 'temperature_c': {'title': 'Temperature C', 'type': 'number'}, 'summary': {'title': 'Summary', 'type': 'string'}}, 'required': ['location', 'temperature_c', 'summary'], 'title': 'WeatherAnswer', 'type': 'object', 'additionalProperties': False}}}
 
-OPENAI_API_KEY is not set, skipping trace export
+Skipping Trace Export
+
 LLM resp:
+
 {
   "content": "{\n  \"location\": \"Karachi\",\n  \"summary\": \"Sunny\",\n  \"temperature_c\": 32.0\n}",
   "refusal": null,
@@ -35,11 +48,17 @@ LLM resp:
 }
 
 Resetting current trace
+
 Creating trace Agent workflow with id trace_9b4826b9303d49cdb169120a803d7133
+
 Setting current trace: trace_9b4826b9303d49cdb169120a803d7133
+
 Creating span <agents.tracing.span_data.AgentSpanData object at 0x000001C9D77D5540> with id None      
+
 Running agent Simple_Agent (turn 1)
+
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001C9D7917CB0> with id None 
+
 [
   {
     "content": "You are a helpfull asssistant.",   
@@ -50,13 +69,19 @@ Creating span <agents.tracing.span_data.GenerationSpanData object at 0x000001C9D
     "content": "Hello?"
   }
 ]
+
 Tools:
+
 []
+
 Stream: False
+
 Tool choice: NOT_GIVEN
+
 Response format: NOT_GIVEN
 
 LLM resp:
+
 {
   "content": "Hello! How can I help you today?\n", 
   "refusal": null,
@@ -68,17 +93,23 @@ LLM resp:
 }
 
 Resetting current trace
+
 location='Karachi' temperature_c=32.0 summary='Sunny'
 32.0
+
 <class '__main__.WeatherAnswer'>
 ======================================================================
+
 Hello! How can I help you today?
 
 <class 'str'>
+
 Shutting down trace provider
+
 Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor object at 0x000001C9D6B5ACF0>   
 
 Urdu Traslation in Terminal
+
 
 ID ٹریس کے ساتھ ٹریس ایجنٹ ورک فلو بنانا
 موجودہ ٹریس سیٹ کرنا
@@ -141,6 +172,7 @@ id None کے ساتھ span <agents.tracing.span_data.GenerationSpanData آبجی
 موجودہ ٹریس کو دوبارہ ترتیب دیا جا رہا ہے۔
 مقام='کراچی' درجہ حرارت_c=32.0 خلاصہ='دھوپ'
 32.0
+
 <class '__main__.WeatherAnswer'>
 ==========================================================
 ہیلو! آج میں آپ کی مدد کیسے کر سکتا ہوں؟
@@ -151,13 +183,19 @@ id None کے ساتھ span <agents.tracing.span_data.GenerationSpanData آبجی
 
 
 02.Prompt.py
+
 Terminal Out Put :
 
 Creating trace Agent workflow with id trace_05b09eaa2a5c427abe8c01e14ad78e30
+
 Setting current trace: trace_05b09eaa2a5c427abe8c01e14ad78e30
+
 Creating span <agents.tracing.span_data.AgentSpanData object at 0x0000025290C3D680> with id None
+
 Running agent Math Agent (turn 1)
+
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x0000025290CC8950> with id None        
+
 [
   {
     "role": "user",
@@ -166,13 +204,18 @@ Creating span <agents.tracing.span_data.GenerationSpanData object at 0x000002529
 ]
 Tools:
 []
+
 Stream: False
+
 Tool choice: NOT_GIVEN
+
 Response format: NOT_GIVEN
 
 LLM resp:
+
 {
   "content": "Okay, here's a list of the best tourist spots in Paris, with short descriptions:\n\n*   **Eiffel Tower:** Iconic landmark, stunning city views.\n\n*   **Louvre Museum:** Home to masterpieces like the Mona Lisa.\n\n*   **Arc de Triomphe:** Triumphal arch at the end of the Champs-Élysées.\n\n*   **Champs-Élysées:** Famous avenue, shopping, dining.\n\n*   **Notre Dame Cathedral:** Historic cathedral, beautiful architecture (currently under renovation).\n\n*   **Sainte-Chapelle:** Stunning Gothic chapel with stained glass.\n\n*  
+
  **Montmartre & Sacré-Cœur Basilica:** Artistic neighborhood, hilltop basilica.\n\n*   **Musée d'Orsay:** Impressionist art in a former train station.\n\n*   **Seine River Cruise:** Relaxing way to see the city's landmarks.\n\n*   **Latin Quarter:** Historic student district, vibrant atmosphere.\n\n*   **Luxembourg Gardens:** Beautiful gardens, perfect for relaxing.\n\n*   **Palace of Versailles:** Opulent palace, former royal residence (a bit outside Paris).\n",
   "refusal": null,
   "role": "assistant",
@@ -214,20 +257,27 @@ Okay, here's a list of the best tourist spots in Paris, with short descriptions:
 
 
 03.Stop_At_Tools.py
+
 Terminal Out Put 
 
 ======================================================================
+
 Today's weather of karachi is sunny.
 
 
 04.Structured_Tools.py
+
 Terminal Out Put
 
 Creating trace Agent workflow with id trace_e5a85f4fa36241078de16385c7d65568
+
 Setting current trace: trace_e5a85f4fa36241078de16385c7d65568
+
 Creating span <agents.tracing.span_data.AgentSpanData object at 0x0000024D11265E00> with id None
+
 Running agent Assistant (turn 1)
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x0000024D12D10D10> with id None        
+
 [
   {
     "content": "You are a helpful assistant. Always use tools for math questions and follow DMAS rule and explainclearly.",
@@ -238,7 +288,9 @@ Creating span <agents.tracing.span_data.GenerationSpanData object at 0x0000024D1
     "content": "What is 5 - 10 + 15?"
   }
 ]
+
 Tools:
+
 [
   {
     "type": "function",
@@ -293,11 +345,15 @@ Tools:
     }
   }
 ]
+
 Stream: False
+
 Tool choice: NOT_GIVEN
+
 Response format: NOT_GIVEN
 
 LLM resp:
+
 {
   "content": null,
   "refusal": null,
@@ -318,11 +374,18 @@ LLM resp:
 }
 
 Creating span <agents.tracing.span_data.FunctionSpanData object at 0x0000024D110FEC10> with id None
+
 Invoking tool subtract with input {"a":5,"b":10}
+
 Tool call args: [5, 10], kwargs: {}
+
+
 Tool subtract returned -5
+
 Running agent Assistant (turn 2)
+
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x0000024D13194FB0> with id None        
+
 [
   {
     "content": "You are a helpful assistant. Always use tools for math questions and follow DMAS rule and explainclearly.",
@@ -431,10 +494,15 @@ LLM resp:
 }
 
 Creating span <agents.tracing.span_data.FunctionSpanData object at 0x0000024D110FD360> with id None
+
 Invoking tool add with input {"b":15,"a":-5}
+
 Tool call args: [-5, 15], kwargs: {}
+
 Tool add returned 10
+
 Running agent Assistant (turn 3)
+
 Creating span <agents.tracing.span_data.GenerationSpanData object at 0x0000024D131968D0> with id None        
 [
   {
@@ -541,8 +609,10 @@ Stream: False
 Tool choice: NOT_GIVEN
 Response format: NOT_GIVEN
 
-OPENAI_API_KEY is not set, skipping trace export
+Skipping Trace Export
+
 LLM resp:
+
 {
   "content": "First, subtract 10 from 5, which results in -5. Then, add 15 to -5, which results in 10. So, 5 
 - 10 + 15 = 10.\n",
@@ -561,6 +631,7 @@ Resetting current trace
 First, subtract 10 from 5, which results in -5. Then, add 15 to -5, which results in 10. So, 5 - 10 + 15 = 10.
 
 Shutting down trace provider
+
 Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor object at skipping trace export.
 
 ![alt text](tool_calling-1.png)
@@ -568,8 +639,12 @@ Shutting down trace processor <agents.tracing.processors.BatchTraceProcessor obj
 Ye Ek Structured Object Hota Hai Jo Sirf System Prompt Nahi, Balke Pura Conversation Ka Format Define Karta Hai :
 
 01.System Message.
+
 02.User Message(s).
+
 03.Tools Description.
+
 04.Context Messages.
 05.Response Formatting.
+
 06.LLM Ko Ek Proper "Multi-Message" InPut Milta Hai, Jo Advanced APIs Jaise OpenAI Responses API ___Kay Liye Optimized Hota Hai.
