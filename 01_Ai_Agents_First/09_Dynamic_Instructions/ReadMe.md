@@ -186,18 +186,23 @@ def explore_agent(context: RunContextWrapper, agent: Agent) -> str:
     Use Case 	                Example
 
 Personalization
+                        
                         Adapt based on user preferences
 
 Context Awareness
+                        
                         Change behavior based on conversation history
 
 Time Sensitivity
+                        
                         Different responses at different times
 
 Learning Progression
+                        
                         Adapt as user becomes more experienced
 
 Multi-Modal
+                        
                         Different instructions for different input types
 
 🧪 Try It Yourself!
