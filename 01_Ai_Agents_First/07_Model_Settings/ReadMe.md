@@ -1,7 +1,9 @@
 🎛️ Model Settings: Control Your AI Agent Brain
+
 🎯 What are Model Settings?
 
 Think of Model Settings like the knobs and dials on a professional camera. Just as a photographer adjusts focus, exposure, and shutter speed to get the perfect shot, you can adjust your AI agent's brain behavior to get exactly the response you want.
+
 🧒 Simple Analogy: Cooking with Precision
 
 Imagine you're cooking:
@@ -12,6 +14,7 @@ Imagine you're cooking:
     Parallel Tools = Whether your agent can use multiple tools at once
 
 🎛️ The Most Important Settings (Baby Steps)
+
 1. Temperature - The Creativity Knob
 
 
@@ -23,6 +26,7 @@ When to use:
     High (0.7-0.9): Creative writing, brainstorming
 
 Note: For gemini temprature range extends to 2.
+
 2. Tool Choice - The "Can I Use Tools?" Switch
 
 
@@ -36,6 +40,7 @@ Example 1: Math Tutor with Low Temperature
 
 
 🎯 When to Use Each Setting
+
 Setting 	Use When 	Example
 Low Temperature 	Need precise, consistent answers 	Math problems, fact-checking
 High Temperature 	Want creative, varied responses 	Story writing, brainstorming
@@ -43,6 +48,7 @@ Tool Choice: Required 	Want to force tool usage 	Data analysis, calculations
 Tool Choice: None 	Want chat-only responses 	Casual conversation
 Low Max Tokens 	Need brief responses 	Quick answers, summaries
 High Max Tokens 	Need detailed explanations 	Tutorials, documentation
+
 🎓 Learning Progression
 
     Start Simple: Just use temperature and max_tokens
@@ -62,7 +68,9 @@ High Max Tokens 	Need detailed explanations 	Tutorials, documentation
     Try the examples in the hello_agent/ folder
     Experiment with your own settings
 
-Remember: Model settings are like seasoning in cooking - a little goes a long way, and the right combination makes all the difference! 🎛️✨
+Remember: Model settings are like seasoning in cooking - a little goes a long way, and the right combination makes all the difference! 
+
+🎛️✨
 
 
 
